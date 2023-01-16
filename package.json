@@ -1,5 +1,5 @@
 {
-  "name": "rollup-plugin-node-polyfills",
+  "name": "@juln/rollup-plugin-node-polyfills",
   "version": "0.2.1",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -15,6 +15,9 @@
     "release": "np --no-yarn --no-release-draft",
     "browser-test": "serve browser-test/dist",
     "prebrowser-test": "npm run build && node ./browser-test/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "files": [
     "dist",
